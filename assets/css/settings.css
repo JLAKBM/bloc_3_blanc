@@ -1,0 +1,32 @@
+/* SETTINGS */
+/* FONTS */
+@font-face {
+    font-family: "text";
+    src : url("../medias/fonts/text.ttf") format("truetype");
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {display : none;}
+
+/* SIZE SETTINGS */
+* {
+    margin : 0;
+    box-sizing : border-box;
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+    transition-duration : 0.3s;
+}
+
+/* SPAWN ANIMATION */
+@keyframes spawn {
+    0% {opacity:0;left:-300px}
+    50% {opacity:1;}
+    100% {opacity:1;left:0px}
+}
+
+body * {
+    animation-name: spawn;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    font-family : "text";
+}

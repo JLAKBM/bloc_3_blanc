@@ -1,0 +1,110 @@
+#gestionnaire {
+    width : 100vw;
+    display : flex;
+    flex-direction :column;
+    align-items : center;
+}
+
+#liste-vehicules {
+    width : 80%;
+    display : flex;
+    flex-direction :column;
+    align-items : center;
+}
+
+button.ajout-vehicule, .vehicule {
+    width : 95%;
+    padding : 10px;
+    background : transparent;
+    border : solid 2px rgb(0, 183, 255);
+    border-radius : 10px;
+    cursor : pointer;
+}
+
+.vehicule {
+    margin : 10px 0;
+    border-color : lightgrey;
+}
+
+.vehicule nav {
+    display : flex;
+    justify-content: space-between;
+}
+
+.vehicule nav div {
+    width : 40%;
+    display : flex;
+}
+
+.vehicule nav div:nth-of-type(2) {
+    justify-content: flex-end;
+}
+
+.vehicule nav div p, .vehicule nav div button {
+    margin : 0 5px;
+    padding : 8px;
+    border-radius : 10px;
+    background : lightgrey;
+    border : none;
+    cursor : pointer;
+}
+
+.details {
+    height : 0;
+    overflow : hidden
+}
+
+.details.open {
+    height : auto;
+}
+
+.details > div {
+    padding-top : 20px;
+    width : 100%;
+    display : flex;
+    flex-direction :column;
+}
+
+.details > div > div {
+    width : 100%;
+    display : flex;
+    justify-content: space-around;
+
+}
+
+.details p {
+    padding : 8px;
+    border-radius : 10px;
+    background : lightgrey;
+}
+
+#gestion-vehicule, body > form {
+    position : fixed;
+    top : 0;
+    left : 0;
+    width : 0;
+    height : 0;
+    overflow : hidden
+}
+
+#gestion-vehicule.open {
+    width : 100vw;
+    height : 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.formulaire-gestion {
+    width : 60%;
+    height : 90%;
+}
+
+.formulaire-gestion div {
+    margin : 10px 0;
+}
+
+.formulaire-gestion div div:nth-of-type(2) {
+    flex-direction: column;
+}
